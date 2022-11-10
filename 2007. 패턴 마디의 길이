@@ -1,0 +1,9 @@
+t = int(input())
+for test_case in range(1,t+1):
+    string = input()
+    for i in range(1,11):
+        stx = string[:i] * (30//i) +string[:(30%i)]
+        if stx == string:
+            result = len(string[:i])
+            break
+    print(f"#{test_case} {result}")
