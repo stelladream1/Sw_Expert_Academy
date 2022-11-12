@@ -1,0 +1,11 @@
+from collections import deque
+import numpy as np
+t = int(input())
+for test_case in range(1,t+1):
+    n = int(input())
+    count = 0
+    array = list(map(int,input().split()))
+    for i in array:
+        if i <=sum(array)// len(array):
+            count = count + 1
+    print(f"#{test_case} {count}")
