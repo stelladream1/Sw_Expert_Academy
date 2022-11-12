@@ -1,0 +1,9 @@
+t = int(input())
+for test_case in range(1,t+1):
+    n = list(map(str,input()))
+    vow = ["a","e","i","o","u"]
+    for i in n[:]:
+        if i in vow:
+            n.remove(i)
+    result = "".join(n)
+    print(f"#{test_case} {result}")
