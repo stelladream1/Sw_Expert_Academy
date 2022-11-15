@@ -1,0 +1,9 @@
+t = int(input())
+for test_case in range(1,t+1):
+    n, d = map(int,input().split())
+    array = [0] * n
+    for i in range(1,d+1):
+        a, b =map(int,input().split())
+        for j in range(a-1,b):
+            array[j] = i
+    print(f"#{test_case}", *array)
