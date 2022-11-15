@@ -1,0 +1,7 @@
+t = int(input())
+for test_case in range(1,t+1):
+    string = list(input())
+    if string.count("x")>= 8 and len(string)>=8:
+        print(f"#{test_case} NO")
+    else:
+        print(f"#{test_case} YES")
