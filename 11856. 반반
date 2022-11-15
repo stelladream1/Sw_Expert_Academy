@@ -1,0 +1,11 @@
+t = int(input())
+for test_case in range(1,t+1):
+    array= list(input())
+    array.sort()
+    if array[0]==array[1] and array[2]==array[3]:
+        if array[0]!=array[2]:
+            print(f"#{test_case} Yes")
+        else:
+            print(f"#{test_case} No")
+    else:
+        print(f"#{test_case} No")
