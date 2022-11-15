@@ -1,0 +1,7 @@
+t = int(input())
+for test_case in range(1,t+1):
+    n, d = map(int,input().split())
+    result = n // (2*d + 1)
+    if n% (2*d + 1)!=0:
+        result = result + 1
+    print(f"#{test_case} {result}")
