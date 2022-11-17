@@ -1,0 +1,15 @@
+
+t = int(input())
+for test_case in range(1, t + 1):
+    n = int(input())
+    array = []
+    result = 0
+    for _ in range(n):
+        a,b = map(int,input().split())
+        if array:
+            for array_a,array_b in array:
+                if (array_a > a and array_b < b) or (array_a < a and array_b > b):
+                    result = result + 1
+        array.append((a,b))
+    print(f"#{test_case} {result}")
+
